@@ -1,0 +1,16 @@
+<h1>Ducks list</h1>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Score</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @ducks.each do |duck| %>
+      <tr>
+        <td><%= duck.name %></td>
+        <td><%= duck.score %></td>
+      </tr>
+    <% end %>
+  </tbody>
